@@ -1,0 +1,150 @@
+h6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+/* .card-img:hover{
+    box-shadow: 21px 0px 84px 21px rgba(0,0,0,0.1);
+} */
+table {
+  width: 100%;
+ 
+}
+
+th {
+  background-color: #004080;
+  color: white;
+  height: 53px;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+tr {
+  font-size: 16px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 22px;
+  height: 100px;
+}
+
+.card-img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 20%;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+
+
+}
+
+.category {
+  /* border: 1px solid #ddd; */
+  /* padding: 0 10px; */
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  /* height: 60px; */
+
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  /* height: 60px; */
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 60px; */
+  /* padding: 0 10px; */
+}
+
+
+
+
+
+
+/* pagination css */
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.pageNumbers li {
+padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  
+
+}
+
+.pageNumbers li:hover {
+  color: #004080
+}
+
+.pageNumbers li.active {
+  background-color: white;
+  color: blue;
+  text-decoration: underline;
+}
+
+.pageNumbers li button {
+  /* background-color: #004080; */
+  border: none;
+  border-radius: 2px;
+  color: black;
+  text-decoration: underline;
+  /* font-size: 1.5rem; */
+  cursor: pointer;
+}
+
+.pageNumbers li button:hover {
+  /* background-color: white; */
+  color: #004080;
+}
+
+.pageNumbers li button:focus {
+  outline: none;
+}
+
+.loadmore {
+  padding: 1rem;
+  background-color: transparent;
+
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  width: 25px;
+  height: 40px;
+}
+
+.delete-btn {
+  width: 25px;
+  height: 40px;
+}

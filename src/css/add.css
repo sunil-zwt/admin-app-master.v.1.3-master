@@ -1,0 +1,46 @@
+.edit-box{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .edit-form,.add-form{
+    background: rgb(230, 234, 253);
+    border-radius: 8px;
+    padding: 10px;
+  }
+input[type="text"],input[type="number"]{
+    width: 250px;
+    height: 30px;
+    border: none;
+    background:  aliceblue;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.add-input{
+    display: flex;
+    flex-direction: column;
+}
+.addproduct-btn{
+    height: 30px;
+    width: 60px;
+    background:  rgb(57, 86, 227);
+    color: azure;
+    border: none;
+    border-radius: 5px;
+}
+.addproduct-btn:hover{
+    background:black ;
+    box-shadow: 10px 12px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.add-btn-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+}
+::placeholder{
+    color: black;
+}

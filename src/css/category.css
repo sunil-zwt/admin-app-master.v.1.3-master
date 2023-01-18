@@ -1,0 +1,25 @@
+.category-section{
+    display: flex;
+    max-width:100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top:4%;
+    justify-content: center;
+}
+.category-card{
+    width: 350px;
+    background:	 aliceblue;
+    border-radius: 10px;
+    box-shadow: 19px 20px 13px -3px rgba(0,0,0,0.1);
+}
+.category-img{
+    
+    max-width: 100%;
+    object-fit: contain;
+    height: 20%;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 300px;
+    width: 350px;
+    
+}
