@@ -2,19 +2,17 @@ import { useState } from "react"
 import { NavLink, Link } from 'react-router-dom';
 export default function SidebarItem({ item }) {
     const [open, setOpen] = useState(false);
-    const toggle = () => setOpen(!open);
-
     if (item.subNav) {
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"} activeclassname="active" >
-                <div className="sidebar-title">
+                <div className="sidebar-title"  onClick={() => setOpen(!open)}>
                     <NavLink to={item.path} className={({ isActive }) =>
                         isActive ? 'active' : 'nav-link'
                     }>
                         <div className="icon" >{item.icon}</div>
                         <div className="link_text">{item.name}</div>
+                    <i className="bi-chevron-down toggle-btn"></i>
                     </NavLink>
-                    <i className="bi-chevron-down toggle-btn" onClick={() => setOpen(!open)}></i>
                 </div>
 
                 {

@@ -27,13 +27,13 @@ const renderCategorydata = (Category) => {
     </div>
   )
 }
-// export const Category = () => {
+export const Category = () => {
 
-//   return (
+  return (
 
-//     <div>Category</div>
-//   )
-// }
+    <div>Category</div>
+  )
+}
 
 export const Electronic = () => {
   let localData = JSON.parse(localStorage.getItem('dataKey'))

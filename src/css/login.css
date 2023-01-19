@@ -58,7 +58,7 @@ input[type="password"]:hover{
 }
 .login-btn{
     height: 30px;
-    width: 70px;
+    width: 150px;
     align-self: center;
     margin-bottom: 10px;
     background:  rgb(57, 86, 227);

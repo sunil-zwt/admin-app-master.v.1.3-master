@@ -55,10 +55,10 @@ function Sidebar({ children }) {
     ]
 
 
-    const handleLogout = (e) => {
+    const handleLogout = () => {
 
         localStorage.removeItem('userToken')
-        // navigate("/login")
+        navigate("/login")
     }
 
     return (
@@ -71,8 +71,8 @@ function Sidebar({ children }) {
                         <p><i>Shopping App</i></p>
                     </div>
                     <div className='header-container-admin-section'>
-                        <div >
-                            <FaIcons.FaUserCircle className='dropdown-icon' onClick={toggle} />
+                        <div  onClick={toggle}>
+                            <FaIcons.FaUserCircle className='dropdown-icon'  />
 
                             {
                                 isOpen ? (<ul className="menu">
@@ -82,7 +82,7 @@ function Sidebar({ children }) {
                                     </li>
                                     <li className="menu-item">
 
-                                        <button className='menu-item-btn'><FaIcons.FaPowerOff />Log Out</button>
+                                        <button className='menu-item-btn' onClick={handleLogout}><FaIcons.FaPowerOff />Log Out</button>
                                     </li>
                                 </ul>) : null
                             }

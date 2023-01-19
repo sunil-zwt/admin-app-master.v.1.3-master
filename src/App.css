@@ -39,6 +39,7 @@ main {
   font-size: 25px;
   margin-left: 50px;
 }
+
 .icon,
 .link_text {
   font-size: 25px;
@@ -67,9 +68,11 @@ main {
   font-size: 18px;
   background: #e6ffff;
 }
-.header-container-logo > p{
-padding-left: 10px;
+
+.header-container-logo>p {
+  padding-left: 10px;
 }
+
 .header-container-admin-section {
   width: 90%;
   display: flex;
@@ -108,7 +111,7 @@ padding-left: 10px;
   margin: 5px 0;
   padding: 0;
   width: 100px;
-  
+
 }
 
 .menu>li {
@@ -134,33 +137,36 @@ padding-left: 10px;
   background: none;
   color: inherit;
   border: none;
- 
+
   margin: 0;
   font: inherit;
   cursor: pointer;
-  
+
 }
 
-.menu-item-btn{
+.menu-item-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: aliceblue;
 }
-.sidebar-item{
+
+.sidebar-item {
   /* padding: .75em 1em; */
   display: block;
   transition: background-color .15s;
- 
+
   color: aliceblue;
 }
-.sidebar-title{
+
+.sidebar-title {
   display: flex;
   background: #004080;
   color: aliceblue;
   transition: all 0.5s;
 }
-.nav-link{
+
+.nav-link {
   display: flex;
   color: black;
   padding: 10px 15px;
@@ -168,6 +174,7 @@ padding-left: 10px;
   transition: all 0.5s;
 
 }
+
 .active {
   background: #004080;
   color: aliceblue;
@@ -175,42 +182,47 @@ padding-left: 10px;
   padding: 10px 15px;
   gap: 15px;
 }
-.sidebar-title i{
+
+.sidebar-title i {
   display: inline-block;
- align-self: center;
- padding: 5px;
- font-size: 20px;
+  align-self: center;
+  padding: 5px;
+  font-size: 20px;
 }
-.sidebar-title .toggle-btn{
+
+.sidebar-title .toggle-btn {
   cursor: pointer;
   transition: all 0.5s;
 }
-.sidebar-item.open > .sidebar-title .toggle-btn{
+
+.sidebar-item.open>.sidebar-title .toggle-btn {
   transform: rotate(180deg);
   transition: all 0.5s;
-  
+
 }
-.sidebar-content{
+
+.sidebar-content {
   background: rgb(175, 216, 252);
   color: aliceblue;
   /* padding: 5px; */
-  
+
   border-radius: 5px;
   transition: all 0.5s;
 }
+
 /* .sidebar-item.open > .sidebar-content{
   height: auto;
 } */
 
-.sidebar-item.plain{
+.sidebar-item.plain {
   display: flex;
   color: black;
   padding: 10px 15px;
   gap: 15px;
   transition: all 0.5s;
-  border-bottom:0.5px solid #004080;
-}
-.sidebar-item.plain:hover{
-  transition: all 0.5s;
+  border-bottom: 0.5px solid #004080;
 }
 
+.sidebar-item.plain:hover {
+  transition: all 0.5s;
+}

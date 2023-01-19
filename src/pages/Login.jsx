@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "../css/login.css";
 import image from "../images/login.jpg"
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom"
-import Sipnner from "../Component/Sipnner";
-import Dashboard from "./Dashboard";
-
+import {  useNavigate } from "react-router-dom"
+import gif2 from "../images/11.gif"
 function Login({token,setToken}) {
   // const userRef = useRef()
   // const errRef = useRef();
@@ -35,7 +33,7 @@ function Login({token,setToken}) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // setLoading(false)
+    setLoading(false)
     let response = axios("https://fakestoreapi.com/auth/login", {
       method: "POST",
       data: {
@@ -103,8 +101,10 @@ function Login({token,setToken}) {
           </div>
         </div>
         {errMsg && <small>{errMsg}</small>}
-        <button onClick={handleLogin} className="login-btn">Login</button>
-        
+
+        {loading ?  <button onClick={handleLogin} className="login-btn">Login</button>:<img src={gif2} className="login-btn"/> }
+       
+
       </form>
    
     </div>
