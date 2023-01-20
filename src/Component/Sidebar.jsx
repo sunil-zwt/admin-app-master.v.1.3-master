@@ -7,11 +7,11 @@ import * as FaIcons from "react-icons/fa";
 
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
+import { useEffect } from 'react';
+import { useRef } from 'react';
 
 function Sidebar({ children }) {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
-    const navigate = useNavigate()
+   
     const menuItem = [
         {
             path: "/",
@@ -54,7 +54,24 @@ function Sidebar({ children }) {
         }
     ]
 
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+    const navigate = useNavigate()
+    let menuRef = useRef()
+    useEffect(()=>{
 
+        let handler = (e) =>{
+            if(!menuRef.current.contains(e.target)){
+
+                setIsOpen(false)
+                console.log(menuRef.current)
+            }
+        }
+            document.addEventListener("mousedown",handler)
+            return ()=>{
+                document.removeEventListener("mousedown",handler)
+            }
+    },[])
     const handleLogout = () => {
 
         localStorage.removeItem('userToken')
@@ -70,7 +87,7 @@ function Sidebar({ children }) {
                         <img src={logo} alt="" className='header-logo-image' />
                         <p><i>Shopping App</i></p>
                     </div>
-                    <div className='header-container-admin-section'>
+                    <div className='header-container-admin-section' ref={menuRef}>
                         <div  onClick={toggle}>
                             <FaIcons.FaUserCircle className='dropdown-icon'  />
 

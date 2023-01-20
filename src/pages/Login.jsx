@@ -64,11 +64,11 @@ function Login({token,setToken}) {
           setLoading(true)
         }
       });
-    setInput({
-      username: "",
-      password: "",
-    });
-    setErrMsg("");
+    // setInput({
+    //   username: "",
+    //   password: "",
+    // });
+    // setErrMsg("");
 
 
 
